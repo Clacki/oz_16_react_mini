@@ -1,6 +1,7 @@
 /** @format */
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import SearchBar from "./SearchBar";
 
 const AUTH_KEY = "userInfo";
 
@@ -23,7 +24,7 @@ function NavBar() {
       <Link to="/" className="font-extrabold text-xl">
         MOVIE
       </Link>
-
+      <SearchBar />
       <nav className="flex items-center gap-3">
         {!isLoggedIn ? (
           <>
