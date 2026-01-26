@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import InputField from "../components/ui/InputField";
 import { useSupabase } from "../contexts/SupabaseContext";
 
-import { useUser } from "../contexts/userContext";
+import { useUser } from "../contexts/UserContext";
 import { setUserInfo } from "../api/getUserApi";
 
 function Login() {
